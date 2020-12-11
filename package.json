@@ -25,5 +25,10 @@
     "url": "https://github.com/Zhan-spec/pulse/issues"
   },
   "homepage": "https://github.com/Zhan-spec/pulse#readme",
-  "description": ""
+  "description": "",
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ]
 }
