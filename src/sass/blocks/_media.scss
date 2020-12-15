@@ -1,11 +1,14 @@
-// @media (max-width: 991px)
-// {
-
-// }
+@media (max-width: 991px) {
+    .container {
+        max-width: 992px;
+        padding: 0 16px;
+    }
+}
 
 @media (max-width: 767px) {
     .container {
-        max-width: 720px;
+        max-width: 768px;
+        padding: 0 24px;
     }
     .promo {
         &__header {
@@ -30,23 +33,93 @@
         &__items {
             flex-direction: column;
             justify-content: space-between;
-            align-items: stretch;
+            align-items: center;
             margin-top: 15px;
         }
         &__item {
             width: 100%;
-            max-width: 767px;
+            max-width: 500px;
+            margin-top: 30px;
         }
         &__subheader {
-            margin-top: 20px;
+            margin-top: 0px;
+        }
+    }
+    .consultation {
+        .title_left {
+            font-size: 30px;    
         }
     }
 
 
+}
+@media (max-width: 575px) {
+    .container {
+        max-width: 576px;
+        padding: 0 18px;
+    }
+    .header {
+        &__official {
+            display: none;
+        }
+        &__phone {
+            font-weight: 400;
+        }
+    }
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+    }
+    .advantages {
+        padding: 50px 0 50px 0;
+    }
+    .consultation {
+        min-height: 580px;
+        padding: 50px 0 50px 0;
+        &__descr {
+            text-align: center;
+        }
+    }
+    .feed-form {
+        width: 100%;
+    }
 
 }
-// @media (max-width: 575px) {
-//     .container {
-//         max-width: 540px;
-//     }
-// }
+@media (max-width: 480px) {
+    .container {
+        padding: 0 18px;
+    }
+    .header {
+        &__contacts {
+            display: none;
+        }
+        &__logo {
+            width: 70%;
+        }
+    }
+    .promo {
+        &__header { 
+            font-size: 20px;
+        }
+        &__subheader { 
+            font-size: 14px;
+        }
+        a {
+            margin: 0 auto;
+        }
+    }  
+    .advantages {
+        &__header {
+            font-size: 24px;
+        }
+    }
+    .consultation {
+        .title_center {
+            font-size: 24px;
+        }
+        &__descr {
+            font-size: 16px;
+        }
+    }
+}
