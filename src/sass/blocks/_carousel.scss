@@ -2,28 +2,28 @@
     padding: 81px 0;
     &__inner {
         position: relative;
-        width: 750px;
+        max-width: 750px;
         margin: 0 auto;
     }
-// при использовании слайдера slick
-//     .slick-prev, .slick-next {    
-//         position: absolute;
-//         top: 50%;
-//         transform: translateY(-50%);
-//         left: -66px;
-//         border: none;
-//         background-color: #fff;
-//         img {
-//             width: 30px;
-//             height: 50px;
-//         }
-//     }
-//     .slick-next {
-//         right: -66px;
-//         left: auto;        
+//при использовании слайдера slick
+    .slick-prev, .slick-next {    
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #fff;
+        img {
+            width: 30px;
+            height: 50px;
+        }
+    }
+    .slick-next {
+        right: -66px;
+        left: auto;        
         
-//     }
-// }
+    }
+ }
 
 
 // при использовании кнопок при использовании tiny-slider

@@ -7,7 +7,7 @@
 
 @media (max-width: 767px) {
     .container {
-        max-width: 768px;
+        max-width: 767px;
         padding: 0 24px;
     }
     .promo {
@@ -50,7 +50,45 @@
             font-size: 30px;    
         }
     }
+    .catalog {
+        &__tabs {
+            display: flex;
+            justify-content: space-around;
+        }
+        &__tab {            
+            max-width: 200px;
+            width: 100%;
+            font-size: 16px;
+        }
+        &-item {
+            width: 49% !important;
+        }
+    }
+    .carousel { 
+        .slick-dots {
+            text-align: center;
+            display: none;
+            // justify-content: center;
+            list-style: none;
+        }
+        // .slick-prev, .slick-next {    
+        //     position: absolute;
+        //     top: 50%;            
+        //     transform: translateY(-50%);
+        //     left: -66px;
+        //     border: none;
+        //     background-color: #fff;
+        //     img {
+        //         width: 30px;
+        //         height: 50px;
+        //     }
+        // }
+        // .slick-next {
+        //     right: -66px;
+        //     left: auto;        
+          
 
+    }
 
 }
 @media (max-width: 575px) {
@@ -84,10 +122,19 @@
     .feed-form {
         width: 100%;
     }
+    .catalog {
+        &-item {
+            width: 100%;
+        }
+        &__tab {
+            font-size: 14px;
+        }
+    }
 
 }
 @media (max-width: 480px) {
     .container {
+        max-width: 479px;
         padding: 0 18px;
     }
     .header {
@@ -120,6 +167,27 @@
         }
         &__descr {
             font-size: 16px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &-item {
+            width: 100% !important;
+        }
+        &__tab { 
+            max-width: 480px;
+            width: 100%;
+            margin: 10px;
+            font-size: 14px;
+            font-weight: 300;
+            transform: skewX(0deg);
+            div {
+                transform: skewX(0deg);
+            }
         }
     }
 }
